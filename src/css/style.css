@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  width: 100%;
+}
+h1 {
+  font-weight: 900;
+  font-size: 150px;
+  margin-top: 270px;
+}
+h2 {
+  font-weight: 900;
+  font-size: 90px;
+  color: #373737;
+}
+h3 {
+  font-weight: 900;
+  font-size: 80px;
+  color: #373737;
+}
+.log_img {
+  color: #fff;
+}
+header {
+  background-color: #141414;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  font-size: 40px;
+}
+.logo_img {
+  width: 100%;
+}
+.burger {
+  display: none;
+}
+.head_nav {
+  margin-right: 1.9rem;
+  font-weight: 400;
+}
+.or_btn {
+  font-weight: 700;
+  background-color: #f26822;
+  padding: 30px 55px;
+  border-radius: 50px;
+}
+
+.hero {
+  background-image: url(../img/bg.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 20% 0 20%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 280px;
+}
+.hero_p {
+  font-weight: 400;
+  font-size: 60px;
+  margin-top: 135px;
+  margin-bottom: 250px;
+}
+.hero_btn {
+  font-size: 60px;
+  background-color: #f26822;
+  padding: 50px 200px;
+  border-radius: 150px;
+}
+.check {
+  padding: 95px 18% 95px 18%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+.check_box {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 40px;
+  width: 33%;
+}
+.check_box:nth-child(2) {
+  padding-left: 50px;
+}
+.check-icon {
+  width: 95px;
+}
+.check_p {
+  margin-left: 50px;
+}
+.where {
+  padding: 120px 18% 160px 18%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.where_p {
+  font-size: 40px;
+  color: #8d8d8d;
+  font-weight: 400;
+  margin-top: 70px;
+}
+.wh_box:nth-child(2) {
+  margin-top: 140px;
+}
+.discounts {
+  padding: 150px 18% 210px 18%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+.faq {
+  padding: 150px 26% 210px 26%;
+}
+.ctxt {
+  display: flex;
+  justify-content: center;
+}
+.acc {
+  padding-top: 150px;
+}
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 52px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #fff;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding-right: 70px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid #ecebeb;
+}
+.acc_p {
+  color: #6d7173;
+  font-size: 42px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer {
+  background-color: #000;
+  padding: 110px 20% 110px 20%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 300;
+  font-size: 36px;
+
+  color: #cbcbcb;
+}
+.f_nav {
+  margin-left: 1.8rem;
+}
+.blocked {
+  width: 100%;
+  text-align: center;
+}
+.d_h2 {
+  margin-bottom: 120px;
+}
+.disc_cont {
+  padding: 65px 65px 85px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(1, 2, 2, 0.44);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(1, 2, 2, 0.44);
+  box-shadow: 0px 4px 20px 0px rgba(1, 2, 2, 0.44);
+}
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.disc_btn {
+  background-color: #f26822;
+  font-size: 50px;
+  padding: 38px 123px;
+  border-radius: 100px;
+}
+
+.disc_img {
+  margin-right: 18px;
+  width: 40px;
+  height: 100%;
+}
+.name_servers {
+  display: flex;
+  align-items: center;
+}
+.d_server {
+  color: #3968a0;
+  font-size: 32px;
+  border-left: 1px solid #cacaca;
+  padding-left: 55px;
+  margin-left: 55px;
+}
+.second {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.disc_p {
+  font-size: 30px;
+  font-weight: 700;
+}
+.desc_disc {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.check_ico {
+  margin-right: 20px;
+}
+.desc_disc_p {
+  font-size: 36px;
+}
+@media screen and (max-width: 3000px) {
+  h1 {
+    font-size: 100px;
+    margin-top: 180px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 53px;
+  }
+  header {
+    font-size: 30px;
+  }
+  .logo_img {
+    width: 80%;
+  }
+  .hero {
+    padding: 0px 10% 230px 10%;
+  }
+  .hero_btn {
+    font-size: 45px;
+    padding: 36px 135px;
+  }
+  .check {
+    padding: 95px 12% 95px 12%;
+  }
+  .check_box {
+    font-size: 28px;
+  }
+  .where {
+    padding: 120px 12% 160px 12%;
+  }
+  .where_p {
+    font-size: 28px;
+    margin-top: 47px;
+  }
+  .check-icon {
+    width: 75px;
+  }
+  .discounts {
+    padding: 150px 12% 210px 12%;
+  }
+  .disc_p {
+    font-size: 23px;
+  }
+  .desc_disc_p {
+    font-size: 26px;
+  }
+  .d_server {
+    font-size: 25px;
+  }
+  .disc_btn {
+    font-size: 38px;
+  }
+  .faq {
+    padding: 150px 16% 210px 16%;
+  }
+  footer {
+    padding: 110px 10% 110px 10%;
+  }
+  .acc_p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 2300px) {
+  h1 {
+    font-size: 75px;
+    margin-top: 140px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  header {
+    font-size: 22px;
+  }
+  .logo_img {
+    width: 60%;
+  }
+  .or_btn {
+    padding: 23px 41px;
+  }
+  .hero {
+    padding: 0px 10% 230px 10%;
+  }
+  .hero_btn {
+    font-size: 35px;
+    padding: 27px 105px;
+  }
+  .hero_p {
+    font-size: 45px;
+    margin-bottom: 190px;
+  }
+  .check {
+    padding: 50px 12% 50px 12%;
+  }
+  .check_box {
+    font-size: 22px;
+  }
+  .where {
+    padding: 120px 12% 160px 12%;
+  }
+  .where_p {
+    font-size: 22px;
+    margin-top: 47px;
+  }
+  .check-icon {
+    width: 60px;
+  }
+  .check_p {
+    margin-left: 38px;
+  }
+  .discounts {
+    padding: 105px 12% 150px 12%;
+  }
+  .disc_p {
+    font-size: 18px;
+  }
+  .disc_cont {
+    padding: 49px 50px 60px;
+    margin-bottom: 75px;
+  }
+  .disc_img {
+    margin-right: 15px;
+    width: 26px;
+  }
+  .desc_disc {
+    margin-top: 30px;
+  }
+  .desc_disc_p {
+    font-size: 23px;
+  }
+  .d_server {
+    font-size: 20px;
+  }
+  .disc_btn {
+    font-size: 28px;
+    padding: 24px 85px;
+  }
+  .faq {
+    padding: 105px 16% 150px 16%;
+  }
+  footer {
+    font-size: 20px;
+    padding: 70px 10% 70px 10%;
+  }
+  .accordion {
+    font-size: 40px;
+  }
+  .acc_p {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  h1 {
+    font-size: 55px;
+    margin-top: 105px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  header {
+    font-size: 19px;
+  }
+  .logo_img {
+    width: 50%;
+  }
+  .or_btn {
+    padding: 18px 30px;
+  }
+  .hero {
+    padding: 0px 10% 170px 10%;
+  }
+  .hero_btn {
+    font-size: 26px;
+    padding: 20px 80px;
+  }
+  .hero_p {
+    font-size: 33px;
+    margin-bottom: 145px;
+  }
+  .check {
+    padding: 35px 12% 35px 12%;
+  }
+  .check_box {
+    font-size: 19px;
+  }
+  .second {
+    width: 60%;
+  }
+  .where {
+    padding: 90px 12% 110px 12%;
+  }
+  .where_p {
+    font-size: 19px;
+    margin-top: 35px;
+  }
+  .check-icon {
+    width: 48px;
+  }
+  .check_p {
+    margin-left: 29px;
+  }
+  .discounts {
+    padding: 80px 12% 100px 12%;
+  }
+  .disc_p {
+    font-size: 18px;
+  }
+  .disc_cont {
+    padding: 38px 38px 45px;
+    margin-bottom: 45px;
+  }
+  .disc_img {
+    margin-right: 15px;
+    width: 20px;
+  }
+  .desc_disc {
+    margin-top: 30px;
+  }
+  .desc_disc_p {
+    font-size: 20px;
+  }
+  .d_server {
+    font-size: 20px;
+  }
+  .disc_btn {
+    font-size: 19px;
+    padding: 20px 65px;
+  }
+  .faq {
+    padding: 80px 16% 100px 16%;
+  }
+  footer {
+    font-size: 18px;
+    padding: 50px 10% 50px 10%;
+  }
+  .accordion {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .acc_p {
+    font-size: 19px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .acc {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head_nav {
+    margin-right: 0.5rem;
+  }
+  .or_btn {
+    padding: 13px 25px;
+  }
+  .d_h2 {
+    margin-bottom: 70px;
+  }
+  .host_name {
+    font-size: 28px;
+  }
+  .d_server {
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  .second {
+    width: 97%;
+  }
+  .desc_disc_p {
+    font-size: 19px;
+    text-align: left;
+  }
+  .check {
+    padding: 35px 10% 35px 10%;
+    justify-content: space-between;
+  }
+  .check_box:nth-child(2) {
+    padding-left: 0;
+  }
+  .check_p {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  .wh_box:nth-child(2) {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 900px) {
+  .burger {
+    display: block;
+    width: 45px;
+  }
+  .nav {
+    display: none;
+  }
+  .logo {
+    padding: 10px;
+  }
+  .check {
+    padding: 35px 5% 35px 5%;
+  }
+  .check_box:nth-child(2) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .check_box {
+    width: 32%;
+  }
+  .disc_btn {
+    padding: 15px 50px;
+  }
+  .name_servers {
+    padding-right: 15px;
+  }
+  .second {
+    width: 100%;
+  }
+  .disc_p {
+    font-size: 15px;
+  }
+  .d_server {
+    padding-left: 15px;
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  .host_name {
+    font-size: 24px;
+  }
+  .f_nav {
+    margin-left: 0.8rem;
+  }
+}
